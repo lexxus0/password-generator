@@ -1,0 +1,124 @@
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: url('./bc-blured-img.jpg'); 
+    background-size: cover;
+    background-attachment: fixed
+    
+    
+}
+
+
+.container {
+    max-width: 480px;
+    background: rgba(56, 226, 220, 0.7);
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      opacity: 0.9; 
+  }
+
+  .password-gen {
+    font-weight: 600;
+    font-size: 1.31rem;
+    padding: 16px 28px;
+    border-bottom: 1px solid #858bb2;
+    text-align: center;
+  }
+  
+  .wrapper {
+    margin: 20px 28px;
+  }
+
+  .wrapper .input-box {
+    position: relative;
+  }
+
+  .input-box input {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    display:block;
+    height: 46px;
+    color: #000505;
+    background: transparent;
+    font-size: 32px;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 1.4px;
+    border: 1px solid #000;
+  }
+
+  .input-box span {
+    position: absolute;
+    right: 20px;
+    top:-3px;
+    cursor: pointer;
+    line-height: 53px;
+    color: #090249;
+  }
+
+  .wrapper .pass-settings {
+    margin: 24px 22px;
+  }
+
+  .pass-settings .options {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+  .pass-settings .options .option {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 2);
+  }
+
+  .option{
+    padding-bottom: 10px;
+  }
+
+  :nth-child(5), :nth-child(6) {
+    padding-bottom: 0;
+  }
+
+  .descr-title{
+    text-align: center;
+    font-weight: 500;
+    }
+
+    .options .option input {
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+      }
+
+      .wrapper .generate-btn {
+        width: 100%;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+        font-size: 1.06rem;
+        padding: 0.94rem 0;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin: 0.94rem 0 1.3rem;
+        transition: 0.5s;
+        background-size: 200% auto;
+      }
+
+      .wrapper .generate-btn:hover {
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+      }
+    
