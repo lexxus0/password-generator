@@ -1,129 +1,156 @@
-body{
-    font-family: "Roboto", sans-serif;
-    background-image: url('./bc-blured-img.jpg'); 
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    
-    
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('./bc-blured-img.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
 }
 
-
 .container {
-    max-width: 360px;
-    width:360px;
-    margin-right: auto;
-    margin-left: auto;
-    background: rgba(56, 226, 220, 0.7);
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      opacity: 0.9; 
+  max-width: 360px;
+  width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(56, 226, 220, 0.7);
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  opacity: 0.9;
+}
+
+.password-gen {
+  font-weight: 600;
+  font-size: 1.31rem;
+  padding: 16px 28px;
+  border-bottom: 1px solid #858bb2;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 20px 28px;
+}
+
+.wrapper .input-box {
+  position: relative;
+}
+
+.input-box input {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  display: block;
+  height: 46px;
+  color: #000505;
+  background: transparent;
+  font-size: 26px;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid #000;
+}
+
+.input-box span {
+  position: absolute;
+  right: 20px;
+  font-weight: 300;
+  top: 14px;
+  cursor: pointer;
+
+  color: #090249;
+}
+
+.wrapper .pass-settings {
+  padding-bottom: 20px;
+  padding-top: 16px;
+}
+
+.pass-settings .options {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.pass-settings .options .option {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% / 2);
+}
+
+.option {
+  padding-bottom: 10px;
+}
+
+:nth-child(5),
+:nth-child(6) {
+  padding-bottom: 0;
+}
+
+.descr-title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.options .option input {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.wrapper .generate-btn {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.wrapper .generate-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 550px;
+    max-width: 550px;
   }
 
   .password-gen {
-    font-weight: 600;
-    font-size: 1.31rem;
-    padding: 16px 28px;
-    border-bottom: 1px solid #858bb2;
-    text-align: center;
-  }
-  
-  .wrapper {
-    margin: 20px 28px;
+    padding: 24px 36px;
+    margin: 0;
   }
 
-  .wrapper .input-box {
-    position: relative;
+  body {
+    margin-top: 60px;
   }
 
-  .input-box input {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0;
-    padding-left: 0;
-    display:block;
-    height: 46px;
-    color: #000505;
-    background: transparent;
-    font-size: 26px;
-    opacity: 0.7;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    border-radius: 4px;
-    letter-spacing: 1.4px;
-    border: 1px solid #000;
+  .pass-settings .options{
+    justify-content: flex-end;
   }
 
-  .input-box span {
-    position: absolute;
-    right: 20px;
-    font-weight: 300;
-    top:-3px;
-    cursor: pointer;
-    line-height: 53px;
-    color: #090249;
+  .pass-settings .options .option{
+    width: 220px;
   }
-
-  .wrapper .pass-settings {
-    padding-bottom: 20px;
-    padding-top: 16px;
-  }
-
-  .pass-settings .options {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
+ 
 }
-
-  .pass-settings .options .option {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100% / 2);
-  }
-
-  .option{
-    padding-bottom: 10px;
-  }
-
-  :nth-child(5), :nth-child(6) {
-    padding-bottom: 0;
-  }
-
-  .descr-title{
-    text-align: center;
-    font-weight: 500;
-    }
-
-    .options .option input {
-        height: 16px;
-        width: 16px;
-        cursor: pointer;
-      }
-
-      .wrapper .generate-btn {
-        width: 100%;
-        color: #fff;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
-        font-size: 1.06rem;
-        padding: 0.94rem 0;
-        border-radius: 5px;
-        text-transform: uppercase;
-        margin: 0.94rem 0 1.3rem;
-        transition: 0.5s;
-        background-size: 200% auto;
-      }
-
-      .wrapper .generate-btn:hover {
-        background-position: right center; 
-        color: #fff;
-        text-decoration: none;
-      }
-    
