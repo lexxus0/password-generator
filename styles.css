@@ -52,11 +52,11 @@ body {
   border: 1px solid #000;
 }
 
-.input-box p {
-  position: absolute;
-  right: 0;
+.descr-copy {
+  position: fixed;
+  right: 40px;
   font-weight: 300;
-  top: -3px;
+  top: 98px;
   cursor: pointer;
   color: #090249;
 }
@@ -149,6 +149,11 @@ body {
 
   .pass-settings .options .option{
     width: 220px;
+  }
+
+  .descr-copy{
+    right: 400px;
+    top:152.5px;
   }
  
 }
