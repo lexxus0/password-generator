@@ -30,9 +30,7 @@ body {
   margin: 20px 28px;
 }
 
-.wrapper .input-box {
-  position: relative;
-}
+
 
 .input-box input {
   margin-right: auto;
@@ -50,13 +48,15 @@ body {
   border-radius: 4px;
   letter-spacing: 1.4px;
   border: 1px solid #000;
+  position: relative;
 }
 
 .descr-copy {
-  position: fixed;
+  position: absolute;
   right: 40px;
-  font-weight: 300;
   top: 98px;
+  font-weight: 300;
+  
   cursor: pointer;
   color: #090249;
 }
@@ -152,8 +152,8 @@ body {
   }
 
   .descr-copy{
-    right: 400px;
-    top:152.5px;
+    right: 270px;
+    top: 98px;
   }
  
 }
